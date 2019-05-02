@@ -81,4 +81,4 @@ If the are some  messages into a queue at the server RabbitMQ, it will be consum
 
 ## Sender
 
-Link to our Sender [rabbitmq-sender](git@gitlab.com:zoubir/rabbitmq-receiver.git)
+Link to our Sender [rabbitmq-sender](https://gitlab.com/zoubir/rabbitmq-sender)
