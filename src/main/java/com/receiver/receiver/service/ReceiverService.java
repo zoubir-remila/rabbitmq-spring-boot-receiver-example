@@ -24,7 +24,11 @@ public class ReceiverService {
     @RabbitListener(queues = "${queue.name}")
     public void receievedSimpleMessage(@Payload  String s) throws IOException {
         UserDto userDto = objectMapper.readValue(s, UserDto.class);
-        logger.info("Received message '{}'", userDto.getFirstName());
+        logger.info("----------------------------------------------");
+        logger.info("|          firstName : {}                   |", userDto.getFirstName());
+        logger.info("|          lastName : {}                     |", userDto.getLastName());
+        logger.info("|              age : {}                       |", userDto.getAge());
+        logger.info("----------------------------------------------");
     }
 
 
